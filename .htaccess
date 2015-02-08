@@ -1,0 +1,5 @@
+AuthUserFile /Applications/MAMP/htdocs/infos/.htpasswd
+AuthType Basic
+AuthName Infos
+Require valid-user
+

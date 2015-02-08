@@ -1,0 +1,208 @@
+/* Mobile First Strategy */
+
+html, body {
+	height: 100%;
+	min-height: 100%;
+}
+
+#wrapper {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+}
+
+#canvas {
+	width; 100%;
+	height: 100%;
+	min-height: 100%;
+	position: relative;
+	-webkit-transfrom: translateX(0);
+	transform: translateX(0);
+	-webkit-transition: 1.0s;
+	transition: 1.0s;
+}
+
+#wrapper.show-profiles #canvas {
+	-webkit-transform: translateX(300px);
+	transform: translateX(300px);
+}
+
+#profiles {
+	position: absolute;
+
+	top: 0;
+	left: -300px;
+
+	width: 300px;
+	height: 100%;
+	min-height: 100%;
+
+	padding: 0 10px;
+
+	background: #AAA;
+}
+
+#infos {
+	padding: 0 10px;
+
+	height: 100%;
+	min-height: 100%;
+
+	overflow: auto;
+
+	background: #D5D5D5;
+
+	-webkit-transition: margin-right 1.0s; /* For Safari 3.1 to 6.0 */
+    transition: margin-right 1.0s;
+}
+
+@media (min-width: 768px) {
+
+	#wrapper.show-profiles #infos {
+		margin-right: 300px;
+	}
+}
+
+h2 {
+	text-align: center;
+}
+
+button {
+	margin-left: 5px;
+}
+
+/* CSS For Profile **/
+
+#search {
+	padding: 5px 0px;
+}
+
+#new-profile {
+	display: none;
+}
+
+#new-info {
+	display: none;
+}
+
+#errors {
+	margin-top: 5px;
+}
+
+.alert {
+	display: none;
+}
+
+.close-alert {
+	text-align: right;
+}
+
+/* Profile Section */
+
+#profile-container {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.profile {
+	padding: 5px;
+	background: #E5E5E5;
+	overflow: auto;
+}
+
+.profile-name {
+	margin-right: 95px;
+}
+
+.selected {
+	border: 1px solid blue;
+}
+
+#info-container {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+
+
+.info {
+	list-style: none;
+	background: #E5E5E5;
+	margin: 10px 0px;
+}
+
+.info-topbar {
+	background: #E8E8E8;
+	padding: 5px 5px;
+	overflow: auto;
+}
+
+.info-header {
+	margin-right: 95px;
+}
+
+.info-buttons {
+	width: 90px;
+	float: right;
+}
+
+.info-content {
+	padding: 5px 5px;
+	background-color: #EFEFEF;
+}
+
+.info-content textarea {
+	height: 300px;
+	height-min: 50px;
+	max-width: 100%;
+	min-width: 100%;
+}
+
+.info-footer {
+	overflow: auto;
+	padding: 5px 5px;
+	font-size: 12px;
+}
+
+.info-dateCreated {
+	width: 50%;
+	float: left;
+}
+
+.info-dateModified {
+	width: 50%;
+	float: right;
+}
+
+.edit {
+	display: none;
+}
+
+#scroll-to-top {
+	display: block;
+	display: none;
+
+	width:  48px;
+	height: 48px;
+
+	position: fixed;
+
+	right: 40px;
+	bottom: 40px;
+
+	color: rgba(0,0,0,0.3);
+	font-size: 48px;
+}
+
+#scroll-to-top:hover {
+	color: rgba(0,0,0,1.0);
+}
+
+
+
+
+
