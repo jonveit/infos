@@ -90,7 +90,7 @@ var selectedID = 1;
 
 
 		$("#button-logout").click( function() {
-			alert("Handler for save button");
+			window.location.replace('http://logout@www.jonveit.com/');
 		});
 
 		$(window).scroll(function(){

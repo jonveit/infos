@@ -1,6 +1,6 @@
 <?php
 
-$version = "local";
+$version = "remote";
 
 switch($version) {
 	case "local":
@@ -16,8 +16,8 @@ switch($version) {
 		define('DB_HOST', 'localhost');
 		define('DB_PORT', '3306');
 		define('DB_NAME', 'jonveit1_infos');
-		define('DB_USER', 'jonveit1_jon');
-		define('DB_PASS', 'asd90123');
+		define('DB_USER', 'jonveit1_infos');
+		define('DB_PASS', 'hujsed567!');
 		break;
 }
 
