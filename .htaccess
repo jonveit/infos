@@ -1,5 +1,5 @@
-AuthUserFile /.htpasswds/.htpasswd
 AuthType Basic
 AuthName Infos
 Require valid-user
 
+AuthUserFile "/home/jonveitc/.htpasswds/infos/passwd"
